@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "xroad_test_app": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7064",
+      "launchBrowser": false
+    }
+  }
+}
