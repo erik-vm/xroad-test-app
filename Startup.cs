@@ -6,9 +6,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using XRoadTestApp;
 using XRoadTestApp.Models;
-using XRoadTestApp.Services;
-using XRoadTestApp.XRoad.Services.TorService;
-using XRoadTestApp.XRoad.Services.XRoadService;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 
@@ -93,8 +90,8 @@ namespace XRoadTestApp
             });
 
             // Add services
-            builder.Services.AddScoped<IXRoadService, XRoadService>();
-            builder.Services.AddScoped<ITorService, TorService>();
+            // builder.Services.AddScoped<IXRoadService, XRoadService>();
+            // builder.Services.AddScoped<ITorService, TorService>();
 
             Console.WriteLine("[STARTUP] All services registered");
         }

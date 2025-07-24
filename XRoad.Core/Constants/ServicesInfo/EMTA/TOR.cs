@@ -1,6 +1,6 @@
 ﻿using XRoadTestApp.Models;
 
-namespace XRoadTestApp.XRoad.Data.EMTA
+namespace XRoadTestApp.XRoad.Core.Constants.ServicesInfo.EMTA
 {
     public abstract class Tor
     {

@@ -5,14 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using XRoadTestApp.Models;
-using XRoadTestApp.Services;
-using XRoadTestApp.XRoad.Data.EMTA;
+using XRoadTestApp.XRoad.Core.Constants.ServicesInfo.EMTA;
+using XRoadTestApp.XRoad.Services.XRoadService.Interface;
 
-namespace XRoadTestApp.XRoad.Services.XRoadService
+namespace XRoadTestApp.XRoad.Services.XRoadService.Service
 {
-    
-
-    public class XRoadService : IXRoadService
+public class XRoadService : IXRoadService
     {
         private readonly HttpClient _httpClient;
         private readonly XRoadConfig _config;
